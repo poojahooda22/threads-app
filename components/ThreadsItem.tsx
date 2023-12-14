@@ -10,7 +10,11 @@ export default function ThreadsItem(thread: Thread): JSX.Element {
         <View>
             <Text>{thread.author.name}</Text>
             <View>
-                
+                <PostHeading 
+                    name={thread.author.name}
+                    createdAt={thread.createdAt}
+                    verified={thread.author.verified}
+                />
             </View>
         </View>
     );
@@ -27,7 +31,7 @@ function PostHeading({
 }) {
     return (
         <View>
-            <View>
+            <View style={{ flexDirection: "row", alignItems: "center", gap: 10}}>
                 <Text>{name}</Text>
                 {verified && (
                     <MaterialIcons name="verified" size={14} color="#60a5fa" />
