@@ -2,16 +2,18 @@ import { StyleSheet, SafeAreaView, ScrollView, Platform, RefreshControl } from '
 
 import EditScreenInfo from '../../components/EditScreenInfo';
 import { Text, View } from '../../components/Themed';
-import LottieView from 'lottie-react-native';
+import Lottie from 'lottie-react-native';
 import * as React from 'react';
+import LottieView from 'lottie-react-native';
 
 export default function TabOneScreen() {
+  const animationRef = React.useRef<Lottie>(null)
   return (
     <SafeAreaView>
       <ScrollView
         contentContainerStyle={{
           paddingHorizontal: 10,
-          // paddingTop: Platform.select({android: 10}), 
+          paddingTop: Platform.select({android: 10}), 
         }}
         refreshControl={
           <RefreshControl
@@ -21,11 +23,12 @@ export default function TabOneScreen() {
             />
         }
       >
-        <LottieView 
+        <Lottie 
+          // ref={animationRef}
           source={require('../../lottie-animations/thread.json')} 
           autoPlay 
           loop={true}
-          style={{ width: 150, height: 150, alignSelf: "center" }}
+          style={{ width: 90, height: 90, alignSelf: "center" }}
         />
       </ScrollView>
     </SafeAreaView>
