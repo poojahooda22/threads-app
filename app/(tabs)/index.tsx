@@ -11,16 +11,16 @@ export default function TabOneScreen() {
       <ScrollView
         contentContainerStyle={{
           paddingHorizontal: 10,
-          paddingTop: Platform.select({android: 30}), 
+          // paddingTop: Platform.select({android: 10}), 
         }}
         refreshControl={
           <RefreshControl
             refreshing={false}
             onRefresh={() => {}}
+            tintColor={"transparent"}
             />
         }
       >
-        <Text>Test</Text>
         <LottieView 
           source={require('../../lottie-animations/thread.json')} 
           autoPlay 
