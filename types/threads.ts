@@ -12,6 +12,13 @@ export interface Thread {
 
 }
 
+export interface Reply {
+    id: string;
+    author: User;
+    content: string;
+    likes: number;
+    createdAt: string;
+}
 
 
 // export interface User {
