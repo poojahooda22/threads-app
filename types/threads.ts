@@ -7,7 +7,7 @@ export interface Thread {
     repliesCount: number;
     likesCount: number;
     mention?: boolean;
-    menttioUser?: User; 
+    mentionUser?: User; 
     createdAt: string;
 
 }
@@ -19,7 +19,6 @@ export interface Reply {
     likes: number;
     createdAt: string;
 }
-
 
 export interface User {
     id: string;
