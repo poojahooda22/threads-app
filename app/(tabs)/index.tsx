@@ -1,22 +1,26 @@
-import { StyleSheet, SafeAreaView, ScrollView } from 'react-native';
+import { StyleSheet, SafeAreaView, ScrollView, Platform } from 'react-native';
 
 import EditScreenInfo from '../../components/EditScreenInfo';
 import { Text, View } from '../../components/Themed';
-import Lottie from 'lottie-react-native';
+import LottieView from 'lottie-react-native';
+import * as React from 'react';
 
 export default function TabOneScreen() {
   return (
     <SafeAreaView>
       <ScrollView
         contentContainerStyle={{
-          backgroundColor:"gray",
+          backgroundColor: "gray",
+          paddingHorizontal: 10,
+          paddingTop: Platform.select({android: 30}),
         }}
+        style={{flex: 1}} 
       >
         <Text>Test</Text>
-        <Lottie 
+        <LottieView 
           source={require('../../lottie-animations/thread.json')} 
           autoPlay 
-          loop={true}
+          loop
           style={{ width: 150, height: 150, alignSelf: "center" }}
         />
       </ScrollView>
