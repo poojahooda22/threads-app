@@ -27,6 +27,6 @@ export interface User {
     verified: boolean;
     photo: string;
     bio: string;
-    link?:string;
-    followers: 
+    link?: string;
+    followers?: User[]
 }
