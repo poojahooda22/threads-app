@@ -1,4 +1,4 @@
-import { StyleSheet, SafeAreaView, ScrollView, Platform } from 'react-native';
+import { StyleSheet, SafeAreaView, ScrollView, Platform, RefreshControl } from 'react-native';
 
 import EditScreenInfo from '../../components/EditScreenInfo';
 import { Text, View } from '../../components/Themed';
@@ -10,17 +10,21 @@ export default function TabOneScreen() {
     <SafeAreaView>
       <ScrollView
         contentContainerStyle={{
-          backgroundColor: "gray",
           paddingHorizontal: 10,
-          paddingTop: Platform.select({android: 30}),
+          paddingTop: Platform.select({android: 30}), 
         }}
-        style={{flex: 1}} 
+        refreshControl={
+          <RefreshControl
+            refreshing={false}
+            onRefresh={() => {}}
+            />
+        }
       >
         <Text>Test</Text>
         <LottieView 
           source={require('../../lottie-animations/thread.json')} 
           autoPlay 
-          loop
+          loop={true}
           style={{ width: 150, height: 150, alignSelf: "center" }}
         />
       </ScrollView>
