@@ -25,7 +25,7 @@ export default function TabOneScreen() {
       >
         <Lottie 
           // ref={animationRef}
-          source={require('../../lottie-animations/thread.json')} 
+          source={require('../../lottie-animations/thread2.json')} 
           autoPlay 
           loop={true}
           style={{ width: 90, height: 90, alignSelf: "center" }}
