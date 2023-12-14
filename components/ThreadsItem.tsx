@@ -9,7 +9,9 @@ export default function ThreadsItem(thread: Thread): JSX.Element {
     return (
         <View>
             <Text>{thread.author.name}</Text>
-            
+            <View>
+                
+            </View>
         </View>
     );
 }
