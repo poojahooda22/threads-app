@@ -7,7 +7,11 @@ import Lottie from 'lottie-react-native';
 export default function TabOneScreen() {
   return (
     <SafeAreaView>
-      <ScrollView>
+      <ScrollView
+        contentContainerStyle={{
+          backgroundColor:"gray",
+        }}
+      >
         <Text>Test</Text>
         <Lottie 
           source={require('../../lottie-animations/thread.json')} 
