@@ -11,3 +11,21 @@ export default function ThreadsItem(thread: Thread): JSX.Element {
         </View>
     );
 }
+
+function PostHeading({
+    name,
+    createdAt,
+    verified,
+} : {
+    name: string;
+    createdAt: string;
+    verified: boolean;
+}) {
+    return (
+        <View>
+            <View>
+                
+            </View>
+        </View>
+    )
+}
