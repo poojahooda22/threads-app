@@ -3,7 +3,7 @@ import * as React from 'react';
 import { Thread } from "../types/threads"
 import { View } from "react-native";
 import { Text } from "./Themed";
-import { Feather, FontAwesome, Ionicons, MaterialIcons } from '@expo/vector-icons';
+import { AntDesign, Feather, FontAwesome, Ionicons, MaterialIcons } from '@expo/vector-icons';
 import { timeAgo } from '../utils/time-ago';
 
 export default function ThreadsItem(thread: Thread): JSX.Element {
@@ -69,7 +69,7 @@ function BottomIcons() {
         <View>
             <FontAwesome name="heart-o" size={iconSize} color={iconColor} />
             <Ionicons name="chatbubble-outline" size={iconSize} color={iconColor} />
-            
+            <AntDesign name="retweet" size={iconSize} color={iconColor} />
         </View>
     )
 }
