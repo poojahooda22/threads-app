@@ -141,10 +141,12 @@ function BottomIcons() {
 
 const styles = StyleSheet.create({
     container: {
-        marginTop: 16,
+        marginTop: 20,
         flexDirection: "row",
         gap: 6,
-        padding: 16,
+        paddingleft: 16,
+        marginLeft: 16,
+        marginRight: 16,
     },
     image: {
         width: 40,
@@ -160,10 +162,10 @@ const styles = StyleSheet.create({
         shadowColor: '#101828',
         shadowOffset: { width: 0, height: 2 },
         shadowOpacity: 0.06, // 6% opacity
-        shadowRadius: 4,
+        shadowRadius: 2,
         // Android doesn't support individual shadow properties like iOS.
         // Elevation is used instead but it doesn't support fine-tuning.
-        elevation: 2, // Adjust elevation to approximate the shadow on Android
+        elevation: 1, // Adjust elevation to approximate the shadow on Android
       },
 })
 
