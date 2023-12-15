@@ -63,5 +63,5 @@ function PostFooter({ replies, likes}: { replies:number; likes: number; }) {
 function BottomIcons() {
     const iconSize = 20;
     const currentTheme = useColorScheme();
-    
+    const iconColor = currentTheme
 }
