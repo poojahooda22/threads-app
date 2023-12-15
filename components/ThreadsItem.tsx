@@ -16,6 +16,7 @@ export default function ThreadsItem(thread: Thread): JSX.Element {
                     createdAt={thread.createdAt}
                     verified={thread.author.verified}
                 />
+                <PostFooter replies={thread.repliesCount} likes={thread.likesCount}  />
             </View>
         </View>
     );
@@ -31,7 +32,11 @@ function PostHeading({
     verified: boolean;
 }) {
     return (
-        <View>
+        <View style={{
+            flexDirection: "row",
+            justifyContent: "space-between",
+            alignItems: "center",
+        }}>
             <View style={{ flexDirection: "row", alignItems: "center", gap: 10}}>
                 <Text style={{ fontWeight: "500" }}>{name}</Text>
                 {verified && (
@@ -43,5 +48,13 @@ function PostHeading({
                 <Feather name="more-horizontal" size={14} color="gray" />
             </View>
         </View>
+    )
+}
+
+function PostFooter({ replies, likes}: { replies:number; likes: number; }) {
+    return (
+        <Text style={{ color: "gray" }}>
+            {replies} replies . {likes} likes
+        </Text>
     )
 }
