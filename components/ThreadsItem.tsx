@@ -16,6 +16,7 @@ export default function ThreadsItem(thread: Thread): JSX.Element {
                     createdAt={thread.createdAt}
                     verified={thread.author.verified}
                 />
+
                 <PostFooter replies={thread.repliesCount} likes={thread.likesCount}  />
             </View>
         </View>
@@ -57,4 +58,10 @@ function PostFooter({ replies, likes}: { replies:number; likes: number; }) {
             {replies} replies . {likes} likes
         </Text>
     )
+}
+
+function BottomIcons() {
+    const iconSize = 20;
+    const currentTheme = useColorScheme();
+    
 }
