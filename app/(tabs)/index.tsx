@@ -20,7 +20,7 @@ export default function TabOneScreen() {
   // const animationRef = useRef(null);
 
   return (
-    <SafeAreaView>
+    <SafeAreaView styles={{ padding: 16}}>
       <ScrollView
         contentContainerStyle={{
           paddingHorizontal: 10,
