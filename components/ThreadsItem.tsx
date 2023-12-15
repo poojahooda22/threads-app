@@ -4,6 +4,7 @@ import { Thread } from "../types/threads"
 import { View } from "react-native";
 import { Text } from "./Themed";
 import { Feather, MaterialIcons } from '@expo/vector-icons';
+import { timeAgo } from '../utils/time-ago';
 
 export default function ThreadsItem(thread: Thread): JSX.Element {
     return (
@@ -38,7 +39,7 @@ function PostHeading({
                 )}
             </View>
             <View style={{flexDirection: "row", alignItems: "center", gap: 10 }}>
-                <Text style={{ color: "gray"}}>{createdAt}</Text>
+                <Text style={{ color: "gray"}}>{timeAgo(createdAt)}</Text>
                 <Feather name="more-horizontal" size={14} color="gray" />
             </View>
         </View>
