@@ -3,7 +3,7 @@ import * as React from 'react';
 import { Thread } from "../types/threads"
 import { View } from "react-native";
 import { Text } from "./Themed";
-import { MaterialIcons } from '@expo/vector-icons';
+import { Feather, MaterialIcons } from '@expo/vector-icons';
 
 export default function ThreadsItem(thread: Thread): JSX.Element {
     return (
@@ -36,6 +36,10 @@ function PostHeading({
                 {verified && (
                     <MaterialIcons name="verified" size={14} color="#60a5fa" />
                 )}
+            </View>
+            <View style={{flexDirection: "row", alignItems: "center", gap: 10 }}>
+                <Text style={{ color: "gray"}}>{timeAgo(createdAt)}</Text>
+                <Feather name="more-horizontal" size={14} color="gray" />
             </View>
         </View>
     )
