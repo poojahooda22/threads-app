@@ -38,10 +38,10 @@ export default function TabOneScreen() {
       >
         <LottieView 
           ref={animationRef}
-          source={require('../../lottie-animations/thread2.json')}   
+          source={require('../../lottie-animations/thread.json')}   
           loop
           autoPlay
-          style={{ width: 120, height: 120, alignSelf: "center" }}
+          style={{ width: 90, height: 90, alignSelf: "center" }}
         />
 
         {threads.map((thread) => (
