@@ -109,7 +109,8 @@ function PostHeading({
             <View 
                 style={{ flexDirection: "row", alignItems: "center", gap: 10}}
             >
-                <Text style={{ fontWeight: "500" }}>{name}</Text>
+                <Text 
+                    style={{ fontWeight: "500" }}>{name}</Text>
                 {verified && (
                     <MaterialIcons name="verified" size={14} color="#60a5fa" />
                 )}
