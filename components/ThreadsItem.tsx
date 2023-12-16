@@ -104,7 +104,8 @@ function PostHeading({
             flexDirection: "row",
             justifyContent: "space-between",
             alignItems: "center",
-        }}>
+            }}
+            >
             <View style={{ flexDirection: "row", alignItems: "center", gap: 10}}>
                 <Text style={{ fontWeight: "500" }}>{name}</Text>
                 {verified && (
