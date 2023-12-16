@@ -100,7 +100,7 @@ function PostHeading({
 }) {
     return (
         <View 
-        style={{
+            style={{
             flexDirection: "row",
             justifyContent: "space-between",
             alignItems: "center",
