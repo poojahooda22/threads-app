@@ -45,7 +45,8 @@ function PostLeftSide(thread: Thread) {
     const borderColor = currentTheme === "light" ? "#00000020" : "#ffffff20";
     
     return (
-        <View style={{ justifyContent: "space-between" }}>
+        <View 
+        style={{ justifyContent: "space-between" }}>
             <Image
                 source={thread.author.photo}
                 style={styles.image}
