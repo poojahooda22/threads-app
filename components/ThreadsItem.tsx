@@ -118,7 +118,8 @@ function PostHeading({
                     <MaterialIcons name="verified" size={14} color="#60a5fa" />
                 )}
             </View>
-            <View style={{flexDirection: "row", alignItems: "center", gap: 10 }}>
+            <View 
+                style={{flexDirection: "row", alignItems: "center", gap: 10 }}>
                 <Text style={{ color: "gray"}}>{timeAgo(createdAt)}</Text>
                 <Feather name="more-horizontal" size={14} color="gray" />
             </View>
