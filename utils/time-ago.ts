@@ -10,11 +10,11 @@ export function timeAgo(date: string): string {
     if(diffInSecs < 60) {
         return diffInSecs + "s";
     } else if(diffInMins < 60) {
-        return diffInMins + "min";
+        return diffInMins + "min ago";
     } else if(diffInHours < 24) {
-        return diffInHours+ "h";
+        return diffInHours+ "h ago";
     } else if(diffInDays === 1) {
-        return "yesteray";
+        return "yesterday";
     } else {
         return diffInDays + "days";
     }
