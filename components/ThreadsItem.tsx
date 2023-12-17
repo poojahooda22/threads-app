@@ -199,7 +199,6 @@ const styles = StyleSheet.create({
         backgroundColor: 'white',
         padding: 16,
         borderRadius: 10,
-        // Approximate the first shadow (React Native doesn't support multiple shadows or spread)
         shadowColor: '#101828',
         shadowOffset: { width: 0, height: 2 },
         shadowOpacity: 0.06, // 6% opacity
