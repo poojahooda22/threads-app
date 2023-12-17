@@ -205,7 +205,7 @@ const styles = StyleSheet.create({
         shadowOffset: { width: 0, height: 2 },
         shadowOpacity: 0.06, // 6% opacity
         shadowRadius: 2,
-        // Android doesn't support individual shadow properties like iOS.
+        
         
         elevation: 1, 
       },
