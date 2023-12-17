@@ -161,7 +161,7 @@ function BottomIcons() {
                 name="heart-o" size={iconSize} color={iconColor} 
             />
             <Ionicons 
-            name="chatbubble-outline" size={iconSize} color={iconColor} />
+                name="chatbubble-outline" size={iconSize} color={iconColor} />
             <AntDesign name="retweet" size={iconSize} color={iconColor} />
             <Feather name="send" size={iconSize} color={iconColor} />
         </View>
