@@ -159,7 +159,8 @@ function BottomIcons() {
         >
             <FontAwesome 
                 name="heart-o" 
-                size={iconSize} color={iconColor} 
+                size={iconSize} 
+                color={iconColor} 
             />
             <Ionicons 
                 name="chatbubble-outline" size={iconSize} color={iconColor} 
