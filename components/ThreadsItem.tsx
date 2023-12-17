@@ -196,7 +196,7 @@ const styles = StyleSheet.create({
         borderRadius: 20,
     },
     shadowBox: {
-        // Other styling properties
+        
         backgroundColor: 'white',
         padding: 16,
         borderRadius: 10,
