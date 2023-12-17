@@ -125,7 +125,8 @@ function PostHeading({
             >
                 <Text 
                     style={{ color: "gray"}}
-                >{timeAgo(createdAt)}</Text>
+                >
+                    {timeAgo(createdAt)}</Text>
                 <Feather name="more-horizontal" size={14} color="gray" />
             </View>
         </View>
