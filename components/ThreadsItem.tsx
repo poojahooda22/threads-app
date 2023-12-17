@@ -129,7 +129,8 @@ function PostHeading({
                     {timeAgo(createdAt)}
                 </Text>
                 <Feather 
-                    name="more-horizontal" size={14} color="gray" 
+                    name="more-horizontal" 
+                    size={14} color="gray" 
                 />
             </View>
         </View>
