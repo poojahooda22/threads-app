@@ -173,7 +173,8 @@ function BottomIcons() {
                 color={iconColor} 
             />
             <Feather 
-                name="send" size={iconSize} color={iconColor} 
+                name="send" 
+                size={iconSize} color={iconColor} 
             />
         </View>
     )
