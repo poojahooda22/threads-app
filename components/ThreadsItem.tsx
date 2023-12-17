@@ -130,7 +130,8 @@ function PostHeading({
                 </Text>
                 <Feather 
                     name="more-horizontal" 
-                    size={14} color="gray" 
+                    size={14} 
+                    color="gray" 
                 />
             </View>
         </View>
