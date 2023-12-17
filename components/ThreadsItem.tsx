@@ -141,7 +141,8 @@ function PostHeading({
 function PostFooter({ replies, likes}: { replies:number; likes: number; }) {
     return (
         <Text 
-            style={{ color: "gray", paddingTop: 4 }}>
+            style={{ color: "gray", paddingTop: 4 }}
+            >
             {replies} replies . {likes} likes
         </Text>
     )
