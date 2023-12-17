@@ -163,7 +163,8 @@ function BottomIcons() {
                 color={iconColor} 
             />
             <Ionicons 
-                name="chatbubble-outline" size={iconSize} color={iconColor} 
+                name="chatbubble-outline" 
+                size={iconSize} color={iconColor} 
             />
             <AntDesign 
                 name="retweet" size={iconSize} color={iconColor} 
