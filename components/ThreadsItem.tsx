@@ -206,7 +206,7 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.06, // 6% opacity
         shadowRadius: 2,
         // Android doesn't support individual shadow properties like iOS.
-        // Elevation is used instead but it doesn't support fine-tuning.
+        
         elevation: 1, 
       },
 })
