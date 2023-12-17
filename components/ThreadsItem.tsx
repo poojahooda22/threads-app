@@ -169,7 +169,8 @@ function BottomIcons() {
             />
             <AntDesign 
                 name="retweet" 
-                size={iconSize} color={iconColor} 
+                size={iconSize} 
+                color={iconColor} 
             />
             <Feather 
                 name="send" size={iconSize} color={iconColor} 
