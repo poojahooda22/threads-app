@@ -127,7 +127,8 @@ function PostHeading({
                     gap: 10 }}
             >
                 <Text 
-                    style={{ color: "gray"}}
+                    style={{ 
+                        color: "gray"}}
                 >
                     {timeAgo(createdAt)}
                 </Text>
