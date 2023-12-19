@@ -26,7 +26,8 @@ export default function ThreadsItem(thread: Thread): JSX.Element {
                 {thread.image && (
                     <Image
                         source={thread.image}
-                        style={{ width: "100%", minHeight: 200, borderRadius: 10, marginTop: 10 }}
+                        style={{ 
+                            width: "100%", minHeight: 200, borderRadius: 10, marginTop: 10 }}
                         placeholder={blurhash}
                         contentFit='cover'
                         transition={200}
