@@ -110,7 +110,8 @@ function PostHeading({
                 style={{ flexDirection: "row", alignItems: "center", gap: 10}}
             >
                 <Text 
-                    style={{ fontWeight: "500" }}
+                    style={{ 
+                        fontWeight: "500" }}
                 >
                     {name}
                 </Text>
