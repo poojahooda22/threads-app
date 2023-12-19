@@ -116,7 +116,8 @@ function PostHeading({
                 </Text>
                 {verified && (
                     <MaterialIcons 
-                        name="verified" size={14} color="#60a5fa" 
+                        name="verified" 
+                        size={14} color="#60a5fa" 
                     />
                 )}
             </View>
