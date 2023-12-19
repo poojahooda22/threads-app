@@ -20,7 +20,7 @@ export default function TabOneScreen() {
   // const animationRef = useRef(null);
 
   return (
-    <SafeAreaView styles={{ padding: 16}}>
+    <SafeAreaView >
       <ScrollView
         contentContainerStyle={{
           paddingHorizontal: 10,
@@ -45,7 +45,7 @@ export default function TabOneScreen() {
         />
 
         {threads.map((thread) => (
-          <ThreadsItem key={thread.id} {...thread}/>
+          <ThreadsItem key={thread.id} {...thread} />
         ))}
       </ScrollView>
     </SafeAreaView>
