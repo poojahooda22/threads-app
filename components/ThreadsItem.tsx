@@ -60,7 +60,7 @@ function PostLeftSide(thread: Thread) {
                     borderWidth: 1,
                     alignSelf: "center",
                     borderColor: borderColor,
-                flexGrow: 1,
+                    flexGrow: 1,
                 }}
             />
             <View
