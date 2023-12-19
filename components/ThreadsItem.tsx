@@ -58,7 +58,7 @@ function PostLeftSide(thread: Thread) {
             <View 
                 style={{
                     borderWidth: 1,
-                alignSelf: "center",
+                    alignSelf: "center",
                 borderColor: borderColor,
                 flexGrow: 1,
                 }}
