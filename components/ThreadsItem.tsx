@@ -108,7 +108,8 @@ function PostHeading({
         >
             <View 
                 style={{ 
-                    flexDirection: "row", alignItems: "center", gap: 10}}
+                    flexDirection: "row", 
+                    alignItems: "center", gap: 10}}
             >
                 <Text 
                     style={{ 
