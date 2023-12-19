@@ -59,7 +59,7 @@ function PostLeftSide(thread: Thread) {
                 style={{
                     borderWidth: 1,
                     alignSelf: "center",
-                borderColor: borderColor,
+                    borderColor: borderColor,
                 flexGrow: 1,
                 }}
             />
