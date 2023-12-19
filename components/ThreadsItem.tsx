@@ -111,7 +111,8 @@ function PostHeading({
             >
                 <Text 
                     style={{ 
-                        fontWeight: "500" }}
+                        fontWeight: "500" 
+                    }}
                 >
                     {name}
                 </Text>
