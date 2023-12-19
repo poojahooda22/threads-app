@@ -47,7 +47,8 @@ function PostLeftSide(thread: Thread) {
     return (
         <View 
             style={{ 
-                justifyContent: "space-between" }}
+                justifyContent: "space-between" 
+            }}
         >
             <Image
                 source={thread.author.photo}
