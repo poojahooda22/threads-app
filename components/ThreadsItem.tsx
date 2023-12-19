@@ -30,7 +30,8 @@ export default function ThreadsItem(thread: Thread): JSX.Element {
                             width: "100%", 
                             minHeight: 200, 
                             borderRadius: 10, 
-                            marginTop: 10 }}
+                            marginTop: 10 
+                        }}
                         placeholder={blurhash}
                         contentFit='cover'
                         transition={200}
